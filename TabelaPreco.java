@@ -1,5 +1,7 @@
-public class TabelaPreco {
-    String sessaotabpreco;
-    ItemTabela itemtabela;
+import java.util.List;
 
+public class TabelaPreco {
+    String tipotabela;
+    ItemTabela itemtabela;
+    List itenstabela ;
 }
