@@ -1,7 +1,4 @@
 public class ItemEstoque {
-    int idproduto ;
-    int validade ;
-    int quantidade ;
-    String tipoestoque ;
-    
+    Produto produto ;
+    float quantidade ;
 }

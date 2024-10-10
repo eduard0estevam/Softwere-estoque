@@ -1,4 +1,6 @@
+import java.util.List;
+
 public class Pedido {
-    Itempedido itempedido ;
-    
+    Itempedido itemPedido ;
+    List itempedido ;
 }
