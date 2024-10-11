@@ -1,5 +1,5 @@
 public class ItemTabela {
-     int precounitario;
+     float precounitario;
      String unidademedida ;
      int quantidade; 
      Produto produto ;
