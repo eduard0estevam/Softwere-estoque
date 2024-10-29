@@ -3,4 +3,5 @@ public class ItemTabela {
      String unidademedida ;
      int quantidade; 
      Produto produto ;
+     
 }
