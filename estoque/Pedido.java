@@ -3,7 +3,7 @@ import java.util.ArrayList;
 
 public class Pedido {
 
-    ArrayList itempedido = new ArrayList<Pedido>(); 
+    public ArrayList<Itempedido> itempedido = new ArrayList<>(); 
 
      public void additempedido(Itempedido item){
         this.itempedido.add(item);
@@ -13,7 +13,7 @@ public class Pedido {
         
         for( int x = 0; x < itempedido.size(); x++){
 
-            if (itempedido.get(x).produto.idproduto == idproduto ) {
+            if (this.itempedido.get(x).produto.idproduto == idproduto ) {
                 this.itempedido.remove(x);
             }
 

@@ -1,5 +1,5 @@
 public class Produto {
-   int  idproduto;
+   public int  idproduto;
    String nome;
    int validade ;
     
