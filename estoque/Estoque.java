@@ -1,7 +1,19 @@
 import java.util.List;
 import java.util.ArrayList;
 public class Estoque {
+    private static Estoque instancia ;
     ArrayList <ItemEstoque> itensestoques ;
+
+    private Estoque(){
+
+    }
+
+    public static Estoque getInstancia() {
+        if(instancia == null){
+            instancia = new Estoque() ;
+        }
+        return instancia ;
+    }
     public void additemestoque(ItemEstoque item){
         this.itensestoques.add(item);
     }
