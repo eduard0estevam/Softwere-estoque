@@ -30,8 +30,9 @@ private static SistemaEstoque instancia ;
             System.out.println("Nao encontrado");
             return null;
     }
-    
-    public void addItemestoque(int idestoque,  int idproduto , int quantidade ){
+
+    public void addItemestoque( Produto produto, int quantidade ){
+        ItemEstoque itens = new ItemEstoque( produto, quantidade) ;
         
     }
 
