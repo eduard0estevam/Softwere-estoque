@@ -7,6 +7,7 @@ public class Estoque {
 
     public Estoque( int idEstoque){
         this.idEstoque = idEstoque;
+        this.itensestoques = new ArrayList<ItemEstoque>(); 
     }
     public void additemestoque(ItemEstoque item){
         this.itensestoques.add(item);
