@@ -5,6 +5,9 @@ public class Estoque {
     ArrayList <ItemEstoque> itensestoques ;
     public int  idEstoque;
 
+    public Estoque( int idEstoque){
+        this.idEstoque = idEstoque;
+    }
     public void additemestoque(ItemEstoque item){
         this.itensestoques.add(item);
     }

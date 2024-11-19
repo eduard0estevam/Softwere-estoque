@@ -1,20 +1,21 @@
 import java.util.ArrayList;
 
 public class SistemaEstoque {
-private static Singleton instancia ; 
+private static SistemaEstoque instancia ; 
  ArrayList<Estoque> listaestoque = new ArrayList<>() ; 
-    private Singleton(){
+    private SistemaEstoque(){
 
     }
-    public static Singleton getinstancia(){
+    public static SistemaEstoque getinstancia(){
         if(instancia == null ){
-            instancia = new Singleton() ; 
+            instancia = new SistemaEstoque() ; 
         }
     return instancia ;
     }
 
-    public void criarestoque(){
-
+    public void criarestoque( int idEstoque){
+        Estoque estoque = new Estoque(idEstoque) ;
+        this.listaestoque.add(estoque);
     }
 
     public Estoque localizarEstoque( int  idestoque){
@@ -29,8 +30,9 @@ private static Singleton instancia ;
             System.out.println("Nao encontrado");
             return null;
     }
-    public void addItemestoque(int idestoque,  int idproduto , int quantidade ){
     
+    public void addItemestoque(int idestoque,  int idproduto , int quantidade ){
+        
     }
 
     public static void main(String[] args) {
