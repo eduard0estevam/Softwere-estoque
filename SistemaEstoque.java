@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 
-public class Singleton {
+public class SistemaEstoque {
 private static Singleton instancia ; 
  ArrayList<Estoque> listaestoque = new ArrayList<>() ; 
     private Singleton(){
