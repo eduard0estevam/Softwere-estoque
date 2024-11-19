@@ -7,6 +7,7 @@ public class Pedido {
 
      public void additempedido(Itempedido item){
         this.itempedido.add(item);
+
     }
  
      public void retiraritempedido(int idproduto){
