@@ -1,12 +1,12 @@
 public class Itempedido {
     Produto produto;
     int quantidade ;
-    String nome ;
+    String idCliente;
 
-    public Itempedido(Produto produto , int quantidade, String nome){
+    public Itempedido(Produto produto , int quantidade, String idcliente){
         this.produto = produto;
         this.quantidade = quantidade;
-        this.nome = nome;
+        this.idCliente = idcliente;
     }
 
     Itempedido item = new Itempedido( produto, 0 , null);

@@ -31,6 +31,7 @@ private static SistemaEstoque instancia ;
             return null;
     }
 
+
     public void addItemestoque( Produto produto, int quantidade, int id){
         Estoque estoque = null;
         ItemEstoque item = new ItemEstoque( produto, quantidade) ;
