@@ -1,14 +1,13 @@
-public class Itempedido {
+public class ItemPedido {
     Produto produto;
     int quantidade ;
-    String idCliente;
+    
 
-    public Itempedido(Produto produto , int quantidade, String idcliente){
+    public ItemPedido(Produto produto , int quantidade){
         this.produto = produto;
         this.quantidade = quantidade;
-        this.idCliente = idcliente;
     }
 
-    Itempedido item = new Itempedido( produto, 0 , null);
+    ItemPedido item = new ItemPedido( produto, 0 , null);
     
 }

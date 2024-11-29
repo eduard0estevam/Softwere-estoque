@@ -3,9 +3,10 @@ import java.util.ArrayList;
 
 public class Pedido {
 
-    public ArrayList<Itempedido> itempedido = new ArrayList<>(); 
-
-     public void additempedido(Itempedido item){
+    public ArrayList<ItemPedido> itempedido = new ArrayList<>(); 
+    String IdPedido ;
+    
+     public void additempedido(ItemPedido item){
         this.itempedido.add(item);
 
     }
