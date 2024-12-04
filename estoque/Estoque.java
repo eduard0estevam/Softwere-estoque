@@ -33,6 +33,16 @@ public class Estoque {
         System.out.println("Produto não encontrado no estoque.");
 }
 
+    public void listarItensEstoque() {
+    if (itensestoques.isEmpty()) {
+        System.out.println("O estoque está vazio.");
+    } else {
+        for (ItemEstoque item : itensestoques) {
+            System.out.println("Produto: " + item.produto.nome + 
+                               ", Quantidade: " + item.quantidade);
+        }
+    }
+}
 
    
 
