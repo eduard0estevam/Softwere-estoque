@@ -19,16 +19,20 @@ public class Estoque {
 
     }
 
-    public void retiraritem( String idproduto){
-
-        for( int x = 0; x < itensestoques.size(); x++){
-
-        if (itensestoques.get(x).produto.idproduto == idproduto ) {
-            this.itensestoques.remove(x);
+    public void retiraritem(String idproduto, int quantidade) {
+        for (int x = 0; x < itensestoques.size(); x++) {
+            if (itensestoques.get(x).produto.idproduto.equals(idproduto)) {
+                if (itensestoques.get(x).quantidade > quantidade) {
+                    itensestoques.get(x).quantidade -= quantidade;
+                } else {
+                    itensestoques.remove(x);
+                }
+                return;
+            }
         }
+        System.out.println("Produto não encontrado no estoque.");
+}
 
-        }
-    }
 
    
 
