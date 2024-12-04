@@ -32,15 +32,14 @@ private static SistemaEstoque instancia ;
     }
 
 
-    public void addItemestoque( int idProdutoEstoque, int quantidade, int idestoque){
-        Estoque estoque = null;
-        ItemEstoque item = new ItemEstoque( quantidade) ;
-        for(int x = 0; x < listaestoque.size(); x++){
+   public void addItemestoque(Produto produto, int quantidade, int idestoque) {
+       Estoque estoque = localizarEstoque(idestoque);
+       if (estoque != null) {
+           ItemEstoque item = new ItemEstoque(produto, quantidade, produto.idproduto.hashCode());
+           estoque.additemestoque(item);
+       } else {
+           System.out.println("Estoque não encontrado.");
+       }
+   }
 
-            if ( listaestoque.get(x).idEstoque == idestoque){
-                   estoque.additemestoque(item, idProdutoEstoque);
-            }
-        }
-       
-    }
 }
