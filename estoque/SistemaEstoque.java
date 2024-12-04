@@ -13,12 +13,12 @@ private static SistemaEstoque instancia ;
     return instancia ;
     }
 
-    public void criarestoque( String idEstoque){
+    public void criarestoque( int idEstoque){
         Estoque estoque = new Estoque(idEstoque) ;
         this.listaestoque.add(estoque);
     }
 
-    public Estoque localizarEstoque( String idestoque){
+    public Estoque localizarEstoque( int idestoque){
       
           for( int x = 0; x < listaestoque.size(); x++){
 
@@ -32,20 +32,15 @@ private static SistemaEstoque instancia ;
     }
 
 
-    public void addItemestoque( String idProdutoEstoque, int quantidade, String idestoque){
+    public void addItemestoque( int idProdutoEstoque, int quantidade, int idestoque){
         Estoque estoque = null;
         ItemEstoque item = new ItemEstoque( quantidade) ;
         for(int x = 0; x < listaestoque.size(); x++){
 
             if ( listaestoque.get(x).idEstoque == idestoque){
-                for( int y  )
-                estoque = listaestoque.get(x);
+                   estoque.additemestoque(item, idProdutoEstoque);
             }
         }
-        estoque.additemestoque(item);
+       
     }
-
-    public static void main(String[] args) {
-        
-    } 
 }

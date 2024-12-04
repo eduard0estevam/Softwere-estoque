@@ -3,14 +3,20 @@ import java.util.ArrayList;
 public class Estoque { 
     
     ArrayList <ItemEstoque> itensestoques ;
-    public String  idEstoque;
+    public int idEstoque;
 
-    public Estoque( String idEstoque){
+    public Estoque( int idEstoque){
         this.idEstoque = idEstoque;
         this.itensestoques = new ArrayList<ItemEstoque>();  
     }
-    public void additemestoque(ItemEstoque item){
-        this.itensestoques.add(item);
+    public void additemestoque(ItemEstoque item , int idProdutoEstoque){
+        for( int x = 0 ; x < itensestoques.size() ;x++ ){
+            if( idProdutoEstoque == itensestoques.get(x).idProdutoEstoque ){
+                this.itensestoques.add(item);
+            }
+        }
+       
+
     }
 
     public void retiraritem( String idproduto){
@@ -26,7 +32,7 @@ public class Estoque {
 
    
 
-    public String getIdestoque() {
+    public int getIdestoque() {
         return idEstoque;
     }
 
@@ -34,7 +40,7 @@ public class Estoque {
         return itensestoques;
     }
 
-    public void setIdestoque(String idestoque) {
+    public void setIdestoque(int idestoque) {
         this.idEstoque = idestoque;
     }
 
