@@ -8,6 +8,6 @@ public class ItemPedido {
         this.quantidade = quantidade;
     }
 
-    ItemPedido item = new ItemPedido( produto, 0 , null);
+    ItemPedido item = new ItemPedido( produto, 0 );
     
 }
