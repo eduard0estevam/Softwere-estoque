@@ -32,15 +32,14 @@ private static SistemaEstoque instancia ;
     }
 
 
-    public void addItemestoque( int idProdutoEstoque, int quantidade, int idestoque){
-        Estoque estoque = null;
-        ItemEstoque item = new ItemEstoque( quantidade) ;
-        for(int x = 0; x < listaestoque.size(); x++){
+  public void additemestoque(ItemEstoque item) {
+      for (ItemEstoque existente : itensestoques) {
+          if (existente.idProdutoEstoque == item.idProdutoEstoque) {
+              existente.quantidade += item.quantidade;
+              return;
+          }
+      }
+      this.itensestoques.add(item);
+  }
 
-            if ( listaestoque.get(x).idEstoque == idestoque){
-                   estoque.additemestoque(item, idProdutoEstoque);
-            }
-        }
-       
-    }
 }
