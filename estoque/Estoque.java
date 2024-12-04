@@ -3,9 +3,9 @@ import java.util.ArrayList;
 public class Estoque { 
     
     ArrayList <ItemEstoque> itensestoques ;
-    public int  idEstoque;
+    public String  idEstoque;
 
-    public Estoque( int idEstoque){
+    public Estoque( String idEstoque){
         this.idEstoque = idEstoque;
         this.itensestoques = new ArrayList<ItemEstoque>();  
     }
@@ -13,7 +13,7 @@ public class Estoque {
         this.itensestoques.add(item);
     }
 
-    public void retiraritem(int idproduto){
+    public void retiraritem( String idproduto){
 
         for( int x = 0; x < itensestoques.size(); x++){
 
@@ -26,7 +26,7 @@ public class Estoque {
 
    
 
-    public int getIdestoque() {
+    public String getIdestoque() {
         return idEstoque;
     }
 
@@ -34,7 +34,7 @@ public class Estoque {
         return itensestoques;
     }
 
-    public void setIdestoque(int idestoque) {
+    public void setIdestoque(String idestoque) {
         this.idEstoque = idestoque;
     }
 

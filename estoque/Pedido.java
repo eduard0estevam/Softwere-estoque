@@ -11,7 +11,7 @@ public class Pedido {
 
     }
  
-     public void retiraritempedido(int idproduto){
+     public void retiraritempedido(String idproduto){
         
         for( int x = 0; x < itempedido.size(); x++){
 
