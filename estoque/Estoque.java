@@ -13,7 +13,7 @@ public class Estoque {
                 this.itensestoques.add(item);
             }
         }
-
+    }
     public void retiraritem(String idproduto, int quantidade) {
         for (int x = 0; x < itensestoques.size(); x++) {
             if (itensestoques.get(x).produto.idproduto.equals(idproduto)) {
