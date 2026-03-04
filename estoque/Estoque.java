@@ -1,7 +1,6 @@
 import java.util.List;
 import java.util.ArrayList;
 public class Estoque { 
-    
     ArrayList <ItemEstoque> itensestoques ;
     public int idEstoque;
     public Estoque( int idEstoque){
@@ -14,9 +13,6 @@ public class Estoque {
                 this.itensestoques.add(item);
             }
         }
-       
-
-    }
 
     public void retiraritem(String idproduto, int quantidade) {
         for (int x = 0; x < itensestoques.size(); x++) {
