@@ -4,7 +4,6 @@ public class Estoque {
     
     ArrayList <ItemEstoque> itensestoques ;
     public int idEstoque;
-
     public Estoque( int idEstoque){
         this.idEstoque = idEstoque;
         this.itensestoques = new ArrayList<ItemEstoque>();  
