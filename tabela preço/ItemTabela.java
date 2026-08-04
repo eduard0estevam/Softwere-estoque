@@ -1,3 +1,5 @@
+import Estoque.Produto;
+
 public class ItemTabela {
      private float precounitario;
      private String unidademedida;

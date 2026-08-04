@@ -1,5 +1,7 @@
 import java.util.ArrayList;
 
+import Estoque.Pedido;
+
 public class ControleVendas {
     Pedido venda;
     private static ControleVendas instancia;

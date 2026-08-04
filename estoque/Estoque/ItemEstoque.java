@@ -1,3 +1,4 @@
+package Estoque;
 public class ItemEstoque {
     Produto produto ;
     int quantidade ;

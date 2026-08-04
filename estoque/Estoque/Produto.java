@@ -1,3 +1,4 @@
+package Estoque;
 public class Produto {
     String  idproduto;
    String nome;

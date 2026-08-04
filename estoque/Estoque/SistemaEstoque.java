@@ -1,3 +1,4 @@
+package Estoque;
 import java.util.ArrayList;
 
 public class SistemaEstoque {
