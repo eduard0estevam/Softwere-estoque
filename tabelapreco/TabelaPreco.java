@@ -1,6 +1,8 @@
+package tabelapreco;
 import java.util.ArrayList;
 import java.util.List;
 
+import estoque.Estoque.*;
 public class TabelaPreco {
     private String tipotabela;
     private List<ItemTabela> itenstabela;

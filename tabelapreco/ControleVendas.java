@@ -1,6 +1,7 @@
+package tabelapreco;
 import java.util.ArrayList;
 
-import Estoque.Pedido;
+import estoque.Estoque.Pedido;
 
 public class ControleVendas {
     Pedido venda;

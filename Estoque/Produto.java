@@ -1,4 +1,5 @@
-package Estoque;
+package estoque;
+
 public class Produto {
     String  idproduto;
    String nome;

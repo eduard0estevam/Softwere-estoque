@@ -1,4 +1,4 @@
-import Estoque.Produto;
+package tabelapreco;
 
 public class ItemTabela {
      private float precounitario;

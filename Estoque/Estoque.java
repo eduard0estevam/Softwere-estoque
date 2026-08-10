@@ -1,5 +1,8 @@
-package Estoque;
+package estoque;
 import java.util.List;
+
+import estoque.ItemEstoque;
+
 import java.util.ArrayList;
 public class Estoque { 
     ArrayList <ItemEstoque> itensestoques ;

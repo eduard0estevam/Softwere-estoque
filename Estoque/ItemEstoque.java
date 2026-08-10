@@ -1,4 +1,4 @@
-package Estoque;
+package estoque;
 public class ItemEstoque {
     Produto produto ;
     int quantidade ;
